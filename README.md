@@ -62,12 +62,6 @@ Total Recoveries = SUM('Banking Data'[Recoveries])
 - Drill-through navigation to customer-level details
 ##  Key DAX Measures
 ```DAX
-Total Payment = SUM('Banking Data'[Total_Pymnt])
-Total Principal = SUM('Banking Data'[Total_Rec_Prncp])
-Total Interest = SUM('Banking Data'[Total_Rec_Int])
-Total Fees = SUM('Banking Data'[Total_Fees])
-Total Recoveries = SUM('Banking Data'[Recoveries])
-
 -- Count of Default Loans
 Count of Default Loans = COUNTROWS(
     FILTER(
