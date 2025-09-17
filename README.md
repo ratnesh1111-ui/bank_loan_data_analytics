@@ -29,10 +29,13 @@ The dashboard is designed to help banks and analysts understand:
 ### 3️ Customer Insights Dashboard
 - Decomposition tree (loan performance by gender, age, region)  
 - Borrower demographics  
-- Drill-through navigation to customer-level details  
+- Drill-through navigation to customer-level details
 
 ---
-
+## Author section:-
+##(Ratnesh Jha, 225 )  
+## Tools Used:-
+## (Power BI, DAX, Excel)  
 ##  Key DAX Measures
 ```DAX
 Total Payment = SUM('Banking Data'[Total_Pymnt])
@@ -47,10 +50,7 @@ Total Recoveries = SUM('Banking Data'[Recoveries])
 - Borrower demographics  
 - Drill-through navigation to customer-level details
 
-# Author section:-
-##(Ratnesh Jha, 225 )  
-# Tools Used:-
-## (Power BI, DAX, Excel)  
+
    
 
 
