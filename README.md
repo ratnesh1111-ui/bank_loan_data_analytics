@@ -32,10 +32,21 @@ The dashboard is designed to help banks and analysts understand:
 - Drill-through navigation to customer-level details
 
 ---
+Explanation:
+
+SUM() → Aggregates numerical values like Payment, Principal, Interest.
+
+COUNTROWS() + FILTER() → Counts the number of rows that satisfy a condition.
+
+Example: Count of all loans where Is Default Loan = Y.
+
+This gives you the number of defaulted loans vs. non-default loans.
+
+These measures are useful for building KPIs, cards, and charts that separate risky loans from safe ones.
 ## Author section:-
-##(Ratnesh Jha, 225 )  
+(Ratnesh Jha, 225 )  
 ## Tools Used:-
-## (Power BI, DAX, Excel)  
+### (Power BI, DAX, Excel)  
 ##  Key DAX Measures
 ```DAX
 Total Payment = SUM('Banking Data'[Total_Pymnt])
@@ -49,6 +60,30 @@ Total Recoveries = SUM('Banking Data'[Recoveries])
 - **Key Influencer Visual** → Identifies main factors affecting loan defaults  
 - Borrower demographics  
 - Drill-through navigation to customer-level details
+##  Key DAX Measures
+```DAX
+Total Payment = SUM('Banking Data'[Total_Pymnt])
+Total Principal = SUM('Banking Data'[Total_Rec_Prncp])
+Total Interest = SUM('Banking Data'[Total_Rec_Int])
+Total Fees = SUM('Banking Data'[Total_Fees])
+Total Recoveries = SUM('Banking Data'[Recoveries])
+
+-- Count of Default Loans
+Count of Default Loans = COUNTROWS(
+    FILTER(
+        'Banking Data',
+        'Banking Data'[Is Default Loan] = "Y"
+    )
+)
+
+-- Count of Non-Default Loans
+Count of Non-Default Loans = COUNTROWS(
+    FILTER(
+        'Banking Data',
+        'Banking Data'[Is Default Loan] = "N"
+    )
+)
+
 
 
    
