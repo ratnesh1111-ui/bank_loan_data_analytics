@@ -47,8 +47,10 @@ Total Recoveries = SUM('Banking Data'[Recoveries])
 - Borrower demographics  
 - Drill-through navigation to customer-level details
 
-- **Author section** (Ratnesh Jha, 225 )  
-- **Tools Used** (Power BI, DAX, Excel)  
+# Author section:-
+##(Ratnesh Jha, 225 )  
+# Tools Used:-
+## (Power BI, DAX, Excel)  
    
 
 
